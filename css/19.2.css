@@ -1,0 +1,26 @@
+* {
+    padding: 0;margin: 0;list-style: none;
+}
+#a1 {
+    width: 500px;
+    height: 600px;
+    border: 1px solid salmon;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#a2 {
+    width: 70px;
+    height: 600px;
+    float: left;
+
+}
+#a2 ul li {
+    line-height: 7.5;
+    border: 1px solid salmon;
+}
+#a3 {
+    width: 430px;
+    height: 600px;
+    float: left;
+
+}

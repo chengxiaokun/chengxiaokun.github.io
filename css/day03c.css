@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#chest {
+    width:384px;
+    height: 384px;
+}
+#box1 {
+    width: 384px;
+    height: 128px;
+    background: #000000;
+}
+/*#box2 {*/
+    /*width: 384px;*/
+    /*height: 128px;*/
+    /*background: red;*/
+/*}*/
+#box3,
+#box4,
+#box5{
+    background: bisque;
+    width: 128px;
+    height: 128px;
+    float: left;
+}
+/*#box6,*/
+/*#box7,*/
+/*#box8{*/
+    /*background: rosybrown;*/
+    /*width: 128px;*/
+    /*height: 128px;*/
+    /*float: left;*/
+
+/*}*/
+#box4{
+    background: red;
+}
+#box5{
+    background: darkblue;
+}

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+#box{
+    width: 600px;
+    height: 400px;
+    background: darkslateblue;
+    border: 8px solid darkslateblue;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#box ul{
+    height: 50px;
+}
+#box li{
+    height: 50px;
+    width: 100px;
+    background: mediumslateblue;
+    border-right: 1px solid steelblue;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+#boxtow{
+    width: 600px;
+    height: auto;
+    background: lightslategrey;
+}
+#boxtow p{
+    width: 600px;
+
+    text-align: center;
+}

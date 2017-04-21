@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <input type="button" value="-" id="so"><!--减号-->
+    <input type="text" value="1" id="so1"><!--数量-->
+    <input type="button" value="+" id="so2"><!--加号-->
+    单价：<span id="doc">120.70</span>元
+    总价：<span id="poc">120.70</span>元
+</div>
+<script>
+var so=document.getElementById('so'),找到减号
+    so1=document.getElementById('so1'),//找到数量
+    so2=document.getElementById('so2'),//找到加号
+    doc=document.getElementById('doc').innerHTML,//找到单价并且获取值
+    poc=document.getElementById('poc');//找到总价
+    so2.onclick=function () {//点击加号时运行这个函数
+        var sb=++so1.value;//每点击一次数量就加加赋值给sb
+        poc.innerHTML=(sb*doc).toFixed(2);//加加后的值乘以单价   保留两位小数
+    }
+    so.onclick=function () {//点击减号时运行这个函数
+        var bs=so1.value;//
+        console.log(bs);
+        if (bs<=1){
+            bs=1;
+        }else {
+            bs=--so1.value;
+            poc.innerHTML=(bs*doc).toFixed(2);
+        }
+
+    }
+</script>
+</body>
+</html>

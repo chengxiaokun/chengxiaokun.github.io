@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#head{
+    width: 600px;
+    height: 802px;
+    background: darkgray;
+    margin: 0 auto;
+}
+#head1{
+    width: 600px;
+    height: 100px;
+    background: white;
+
+}
+#head1 dt{
+    height: 98px;
+    float: left;
+    line-height: 100px;
+}
+#head1 dd{
+    height: 98px;
+    float: right;
+    line-height: 100px;
+}
+#head2{
+    width: 600px;
+    height: 50px;
+    background: white;
+}
+#head2 ul{
+    width: 600px;
+    height: 50px;
+}
+#head2 li{
+    margin-left: 24px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+#head3{
+    width: 600px;
+    height: 50px;
+    background: brown;
+}
+#center{
+    width: 600px;
+    height: 400px;
+    background: yellow;
+}
+#tob{
+    width: 600px;
+    height: 200px;
+    background: red;
+}
+#left{
+    width: 350px;
+    height: 400px;
+    background: darkgreen;
+    float: left;
+}
+#top{
+    width: 350px;
+    height: 50px;
+    background: white;
+}
+#top p{
+    padding-top: 15px;
+    padding-left:10px;
+    border-bottom: 1px solid seagreen;
+}
+
+/*#x{*/
+    /*width: 350px;*/
+    /*height: 200px;*/
+    /*background: ghostwhite;*/
+/*}*/
+#x{
+    width: 350px;
+    height: 175px;
+
+}
+#a{
+    width: 100px;
+    height: 175px;
+    background: white;
+    float: left;
+}
+#b{
+    width: 150px;
+    height: 175px;
+    background: darkorange;
+    float: left;
+}
+#c{
+    width: 100px;
+    height: 175px;
+    background: skyblue;
+    float: left;
+}
+#d{
+    width: 100px;
+    height: 175px;
+    background: indigo;
+    float: left;
+}
+#e{
+    width: 150px;
+    height: 175px;
+    background: navajowhite;
+    float: left;
+}
+#f{
+    width: 100px;
+    height: 175px;
+    background: black;
+    float: left;
+}
+#right{
+    width: 250px;
+    height: 400px;
+    background: fuchsia;
+    float: left;
+}
+#right dt{
+    width: 250px;
+    height: 50px;
+    background: white;
+}
+#right p{
+    border-bottom: solid 1px red;
+    padding-top: 15px;
+    padding-left:10px;
+    float: left;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/19.2.css">
+</head>
+<body>
+<div id="a1">
+
+    <div id="a2">
+        <ul id="a2a">
+            <li id="b1">男士用品</li>
+            <li id="b2">女士用品</li>
+            <li id="b3">运动服饰</li>
+            <li id="b4">手表配饰</li>
+            <li id="b5">家用百货</li>
+        </ul></div>
+    <div id="a3">
+        <img src="../../img/asd/u=673016824,3671609293&fm=23&gp=0.jpg" height="600" width="500"/>
+        <img src="../../img/asd/sl_600_2012031206353368504147.jpg" height="600" width="500"/>
+        <img src="../../img/asd/sl_600_2012020210273415445837.jpg" height="600" width="500"/>
+        <img src="../../img/asd/sl_600_2011121809504258404210.jpg" height="600" width="500"/>
+        <img src="../../img/asd/34070.jpg" height="600" width="500"/>
+    </div>
+</div>
+<script>
+    var sa=document.getElementById('a2a').getElementsByTagName('li');
+    var ss=document.getElementById('a3').getElementsByTagName('img');
+    for (var i=0;i<sa.length;i++) {
+        sa[i].index=i;
+
+        sa[i].onclick=function () {
+            for (var j=0;j<ss.length;j++) {
+                sa[j].style.background='none';
+                ss[j].style.display='none';
+
+            }
+            sa[this.index].style.background='red';
+            ss[this.index].style.display='block';
+//         console.log(this.index);
+        }
+    }
+</script>
+
+
+</body>
+</html>

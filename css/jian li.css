@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.clear {
+    clear: both;
+}
+#chest {
+    width: 600px;
+    height: 700px;
+    margin: auto;
+}
+#box1 {
+    background: deepskyblue;
+    width: 240px;
+    height: 700px;
+
+}
+#box2 {
+    background: darkseagreen;
+    width: 320px;
+    height: 700px;
+}
+#box1,
+#box2 {
+    float: left;
+}

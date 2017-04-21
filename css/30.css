@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#chest{
+    background: aqua;
+    width: 300px;height: 500px;
+}
+#box1{
+    background: aliceblue;
+    width: 290px;height: 490px
+}
+#box2{
+    background: black;
+    width: 270px;height: 20px;
+}
+#box3{
+    background: red;
+    width: 240px;
+}
+#box4{
+}
+#box5{}
+#box6{}
+#box7{}
+#box8{}
+#box9{}
+#box10{}
+#box11{}

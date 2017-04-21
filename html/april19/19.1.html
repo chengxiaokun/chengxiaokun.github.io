@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/19.1.css">
+</head>
+<body>
+<div id="box">
+    <div id="le">
+        <ul id="sd">
+            <li>服装</li>
+            <li>食品</li>
+            <li>五金</li>
+            <li>蔬菜</li>
+        </ul>
+    </div>
+    <div id="ri">
+        <img src="../../img/asd/sl_600_2012031206353368504147.jpg" height="600" width="600"/>
+        <img src="../../img/asd/sl_600_2011121809504258404210.jpg" height="600" width="600"/>
+        <img src="../../img/asd/34070.jpg" height="600" width="600"/>
+        <img src="../../img/asd/u=2814072408,2893352771&fm=23&gp=0.jpg" height="600" width="600"/>
+        <img src="../../img/asd/sl_600_2012020210273415445837.jpg" height="600" width="600"/>
+        <img src="../../img/asd/u=2814072408,2893352771&fm=23&gp=0.jpg" height="600" width="600"/>
+    </div>
+</div>
+<script>
+    var sa=document.getElementById('sd').getElementsByTagName('li');
+    var ss=document.getElementById('ri').getElementsByTagName('img');
+    for (var i=0;i<sa.length;i++) {
+        sa[i].index=i;
+
+        sa[i].onclick=function () {
+            for (var j=0;j<ss.length;j++) {
+                sa[j].style.background='none';
+                ss[j].style.display='none';
+
+            }
+            sa[this.index].style.background='red';
+            ss[this.index].style.display='block';
+//         console.log(this.index);
+        }
+    }
+</script>
+
+</body>
+</html>

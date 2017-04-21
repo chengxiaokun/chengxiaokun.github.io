@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/18.1.css">
+</head>
+<body>
+<div id="box">
+    <ul id="coc">
+        <li>asd</li>
+        <li>sad</li>
+        <li>dsa</li>
+    </ul>
+    <div id="boxtow">
+        <p>srdtygkl;,flpv;l.m,dvp';/.,asdojlkn,maoilsk,mdxxgkjlkmasl;,d;cvhilj;l,;sd][';.</p>
+        <p>irfghoijnbedfvbokjnbdfvbazlkmsdcpl,m asfgbndfokmshnas[;]a'aikjvhgnma</p>
+        <p>asdfghuwhfruihqifhksfhjkgkdhlkjhfviwuhguifhjgfjhadsbgfjwgfuefgjshgakjfgygfyawgasjdhfwgfui</p>
+    </div>
+</div>
+    <script>
+        var a=document.getElementById("coc").getElementsByTagName("li");
+        var b=document.getElementById("boxtow").getElementsByTagName("p");
+        for (let i=0;i<a.length;i++){
+            a[i].onclick=function () {
+                //alert('cc');
+                for (var j=0;j<a.length;j++){
+                    a[j].style.background="";
+                    b[j].style.display="none";
+                    b[j].style.background="";
+                }
+                a[i].style.background="#ffffff";
+                b[i].style.background="#ffffff";
+                b[i].style.display="block";
+            }
+
+        }
+    </script>
+</div>
+</body>
+</html>

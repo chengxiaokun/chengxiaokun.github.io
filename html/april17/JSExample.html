@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/JSExampie.css">
+    <!--overflow:hidden//溢出隐藏-->
+    <!--dispiay：block//行内元素转化为快级元素-->
+    <!--dispiay：inline//块级元素转化为行内元素-->
+
+</head>
+<body>
+<div id="box">
+    <img src="../../img/1.jpg" height="320" width="700"/>
+    <img src="../../img/2.jpg" height="320" width="700"/>
+    <img src="../../img/3.jpg" height="320" width="700"/>
+    <img src="../../img/4.jpg" height="320" width="700"/>
+    <img src="../../img/5.jpg" height="320" width="700"/>
+    <img src="../../img/6.jpg" height="320" width="700"/>
+    <img src="../../img/7.jpg" height="320" width="700"/>
+    <img src="../../img/8.jpg" height="320" width="700"/>
+    <img src="../../img/9.jpg" height="320" width="700"/>
+    <img src="../../img/10.jpg" height="320" width="700"/>
+    <span id="left"><</span>
+    <span id="right"> ></span>
+</div>
+<script>
+    var box = document.getElementById("box").getElementsByTagName("img"); //找到BOX 盒子里面的图片
+    var left = document.getElementById("left");//左按钮
+    var right=document.getElementById("right");//右按钮
+    // 点击右按钮时 下标加1  点击左按钮时 下标减1
+
+    var box = document.getElementById("box");
+    var left = document.getElementById("left");
+    var right = document.getElementById("right");
+    var imgs = document.getElementsByTagName("img");
+    //    点击right按钮切换图片：
+    // 1.先让所有的图片隐藏（display:none)
+    // 2.下标+1
+    // 3.当前下标图片显示
+    // 注意：当我的图片到最后一张的时候，index=0
+    var index = 0;
+    right.onclick = function () {
+        for(var i = 0; i < imgs.length; i++){
+            imgs[i].style.display = 'none';
+        }
+        index++;
+        if(index > imgs.length-1){
+            index = 0;
+        }
+        imgs[index].style.display = 'block';
+    }
+    left.onclick = function () {
+        for(var i = 0; i < imgs.length; i++){
+            imgs[i].style.display = 'none';
+        }
+        index--;
+        if(index <0){
+            index =imgs.length-1;
+        }
+        imgs[index].style.display = 'block';
+    }
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

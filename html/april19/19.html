@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/19.css">
+</head>
+<body>
+<div id="box">
+    <p id="ppp"></p>
+    <button id="on">开始</button>
+    <button id="off">停止</button>
+</div>
+<script>
+    var na=["奥特曼","孙悟空","猪八戒","喜羊羊"];[]
+    var ppp=document.getElementById("ppp"),on=document.getElementById("on"),off=document.getElementById("off");
+    //点击开始名字循环//点击结束循环停止
+    var i=0;//下标初始值
+    function aa() {//函数
+        ppp.innerHTML=na[i];//把文本添加到盒子
+        i++;
+        if(i>na.length-1){//如果i超出数组数量//强制下标等于0
+            i=0;
+        }
+    }
+    on.onclick=function () {//给“开始”添加点击事件
+        se=setInterval(aa,200)//添加定时器（函数名字，时间（毫秒））
+    }
+    off.onclick=function () {//给“结束”添加点击事件
+        clearInterval(se)//清除上面的定时器  使停止
+    }
+
+</script>
+</body>
+</html>

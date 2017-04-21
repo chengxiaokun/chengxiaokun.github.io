@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/18.css">
+</head>
+<body>
+<div id="box">
+    <ul id="ccc">
+        <li>新闻</li>
+        <li>图片</li>
+        <li>索引</li>
+    </ul>
+    <div id="box1">
+        <p>企鹅说法企鹅尽快发货情况和覅七色花佛为</p>
+        <p>阿斯顿法国红酒快乐如果会呢地方个别地方</p>
+        <p>地方肝硬化健康灵感都会i就可以过户健康</p>
+    </div>
+    <script>
+        var sos=document.getElementById("ccc").getElementsByTagName("li");
+        var soc=document.getElementById("box1").getElementsByTagName('p');
+        for (var i=0;i<sos.length;i++){//
+            sos[i].index=i;
+            sos[i].onclick=function () {
+                for (var j=0;j<soc.length;j++){
+                    sos[j].style.background="";
+                    soc[j].style.display="none";
+                    soc[j].style.background="";
+                }
+                sos[this.index].style.background="red";
+                soc[this.index].style.display="block";
+                soc[0].style.height="500px".background="#ccc";
+                soc[1].style.background="chocolate";
+                soc[2].style.background="lightslategrey";
+            }
+        }
+    </script>
+</div>
+</body>
+</html>

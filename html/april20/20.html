@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding:0;list-style: none;}
+        #box{
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        #bian{
+            width: 1600px;
+            height: 400px;
+        }
+        #bian li{
+            list-style: none;
+            width: 400px;
+            height:400px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul id="bian">
+        <li style="background: red"></li>
+        <li style="background: yellow"></li>
+        <li style="background: darkgreen"></li>
+        <li style="background: cornflowerblue"></li>
+    </ul>
+</div>
+<button id="on">kai</button>
+<button id="off"> ting</button>
+<script>
+    var bian=document.getElementById("bian");
+//    console.log(bian);
+    function aaa() {
+        //获取UL的marginleft的值强制转换
+       var mleft=parseInt(bian.style.marginLeft);
+       if (!mleft){//如果他没有marginleft  就给他加一个 强制等于0
+           mleft=0;
+       }
+       if (mleft>-1200){//
+           bian.style.marginLeft=mleft-1+"px";
+        }
+        else {
+           bian.style.marginLeft=0;
+       }
+    }
+    on.onclick=function(){
+         sd=setInterval(aaa,10);
+         on.disabled='disabled';//
+    }
+    off.onclick=function(){
+        clearInterval(sd);
+        on.disabled='';
+    }
+
+</script>
+</body>
+</html>

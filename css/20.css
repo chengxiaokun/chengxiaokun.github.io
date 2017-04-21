@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#chest{
+    width: 660px;
+    height: 660px;
+    background: wheat;
+}
+#box1{
+    width: 620px;
+    height: 620px;
+    background: lightsteelblue;
+    border: solid red;
+    position: absolute;left: 20px;top: 20px;
+}
+#box2{
+   position: absolute;left: 10px;top: 10px;
+}
+#box3{
+    position: absolute;right: 10px; top: 10px;
+}
+#box4{
+    width: 200px;height: 200px;
+    background: blue;
+    position: absolute;left: 210px;top: 210px;
+}
+#box5{
+    position: absolute;left: 10px;bottom: 10px;
+}
+#box6{
+    position: absolute;right: 10px;bottom: 10px;
+}
+#box2,
+#box3,
+#box5,
+#box6{
+    background: red;
+    width: 200px;height: 200px;
+}
