@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/april24/24.css">
+</head>
+<body>
+<div id="box">
+    <ul id="imgs">
+        <li><img src="../../img/1.jpg" height="320" width="700"/><p>萨芬士大夫</p></li>
+        <li><img src="../../img/3.jpg" height="320" width="700"/><p>豆腐干地方</p></li>
+        <li><img src="../../img/4.jpg" height="320" width="700"/><p>动画规范</p></li>
+        <li><img src="../../img/5.jpg" height="320" width="700"/><p>会大概会不会</p></li>
+        <li><img src="../../img/6.jpg" height="320" width="700"/><p>火箭发射的客户购物i</p></li>
+        <li><img src="../../img/7.jpg" height="320" width="700"/><p>合并肺结核</p></li>
+        <li><img src="../../img/8.jpg" height="320" width="700"/><p>的话别vs看到v包括</p></li>
+        <li><img src="../../img/9.jpg" height="320" width="700"/><p>放进购物服务iu发</p></li>
+        <li><img src="../../img/10.jpg" height="320" width="700"/><p>见方的观点速发货</p></li>
+    </ul>
+</div>
+<script>
+    //划过每个li的时候，让li加边框，p标签出现。离开时边框消失，p标签消失。
+  var lis=document.getElementsByTagName("ul")[0].getElementsByTagName("li");//找到所有的li
+  for (var i=0;i<lis.length;i++){
+      lis[i].onmouseover=function () {//划过
+          this.style.border="2px solid red";
+          this.getElementsByTagName("p")[0].style.display="block";
+      }
+      lis[i].onmouseout=function () {//离开
+          this.style.border="2px solid #ccc";
+          this.getElementsByTagName("p")[0].style.display="none";
+      }
+  }
+</script>
+</body>
+</html>

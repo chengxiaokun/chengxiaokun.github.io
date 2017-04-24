@@ -1,0 +1,30 @@
+*{
+    margin: 0;padding: 0;list-style: none;
+}
+#box{
+    width: 700px;
+    height: auto;
+}
+#box ul{
+    width: 700px;
+    height: auto;
+}
+#box ul li{
+    width: 700px;
+    height: 320px;
+    position: relative;
+    border: 2px solid #ffffff;
+}
+#box ul li p{
+    width: 680px;
+    height: 50px;
+    line-height: 50px;
+    color: aqua;
+    background: black;
+    opacity: 0.4;
+    left: 0;
+    position: absolute;
+    bottom: 20px;
+    padding-left: 20px;
+    display: none;
+}
