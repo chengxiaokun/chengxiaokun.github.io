@@ -1,0 +1,36 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: orangered;
+    margin: 20px auto;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    margin: 20px auto;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background: goldenrod;
+    margin: 20px auto;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px auto;
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background: darkolivegreen;
+    margin: 20px auto;
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    background: darkgray;
+    margin: 20px auto;
+}

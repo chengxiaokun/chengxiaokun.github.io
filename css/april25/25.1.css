@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#box{
+    width: 3000px;
+    height: 600px;
+    position: absolute;
+    -webkit-animation: huadong 10s linear 3s 2 alternate  ;/*名字  时间 速度曲线 延时 播放次数 方向   infinite无限循环
+    速度曲线：匀速 linear/满-块-慢 ease/由慢开始 ease-in/由慢结束 ease-out/由慢开始由慢结束 ease-in-out*/
+}
+@-webkit-keyframes huadong {
+    0%{
+       left: 0;
+    }
+    25%{
+        left: -600px;
+    }
+    50%{
+        left: -1200px;
+    }
+    75%{
+        left: -1800px;
+    }
+    100%{
+        left: -2400px;
+    }
+}

@@ -1,0 +1,22 @@
+#box {
+    width: 200px;
+    height: 200px;
+    background: darkred;
+    border-radius: 20px;
+    margin: 80px auto;
+    -webkit-transform: rotate(45deg);
+    -webkit-transition: all 1s;
+}
+#box p {
+    font-size: 140px;
+    line-height: 200px;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -webkit-transition: all 1s;
+}
+#box:hover {
+    -webkit-transform: rotate(315deg);
+}
+#box p:hover {
+    -webkit-transform: rotate(945deg);
+}

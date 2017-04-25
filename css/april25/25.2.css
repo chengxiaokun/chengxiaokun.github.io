@@ -1,0 +1,39 @@
+* {
+    margin: 0;padding: 0;list-style: none;
+}
+#box {
+    width:100px;
+    height: 50px;
+    margin: 20px auto;
+}
+#box div {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: red;
+    display: inline-block;
+}
+#box .a {
+    -webkit-animation:aaa 1s linear infinite alternate;
+
+}
+#box .b {
+    background: blue;
+    -webkit-animation: bbb 1s linear  infinite alternate;
+}
+@-webkit-keyframes aaa {
+    0% {
+        -webkit-transform:scale(0.8) ;
+    }
+    100%{
+        -webkit-transform:scale(3) ;
+    }
+}
+@-webkit-keyframes bbb {
+    0% {
+        -webkit-transform: scale(3);
+    }
+    100% {
+        -webkit-transform: scale(0.8);
+    }
+}
